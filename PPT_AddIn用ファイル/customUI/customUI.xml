@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+<ribbon startFromScratch="false">
+<tabs>
+<tab id="MyTab1" label="自作マクロ">
+
+<group id="Group1" label="縁文字の作成・解除">
+<button id="Button1-1" label="縁文字の作成" imageMso="DiagramChangeToTargetClassic" size="normal" onAction="縁文字UserFormの起動" />
+<button id="Button1-2" label="縁文字の解除" imageMso="CancelRequest" size="normal" onAction="縁文字の解除" />
+</group>
+
+<group id="Group2" label="左右位置">
+<button id="Button2-1" label="左揃え" imageMso="ObjectsAlignLeft" size="normal" onAction="左揃え" />
+<button id="Button2-2" label="左右中央揃え" imageMso="ObjectsAlignCenterHorizontal" size="normal" onAction="左右中央揃え" />
+<button id="Button2-3" label="右揃え" imageMso="ObjectsAlignRight" size="normal" onAction="右揃え" />
+</group>
+
+<group id="Group3" label="上下位置">
+<button id="Button3-1" label="上揃え" imageMso="ObjectsAlignTop" size="normal" onAction="上揃え" />
+<button id="Button3-2" label="上下中央揃え" imageMso="ObjectsAlignMiddleVertical" size="normal" onAction="上下中央揃え" />
+<button id="Button3-3" label="下揃え" imageMso="ObjectsAlignBottom" size="normal" onAction="下揃え" />
+</group>
+
+<group id="Group4" label="線の変換">
+<button id="Button4-1" label="波線に変換" imageMso="LineStylesDialog" size="normal" onAction="波線に変換" />
+</group>
+
+</tab>
+</tabs>
+</ribbon>
+</customUI>
