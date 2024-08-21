@@ -2,9 +2,9 @@
 <customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
 <ribbon startFromScratch="false">
 <tabs>
-<tab id="MyTab1" label="自作マクロ">
+<tab id="MyTab1" label="自作VBA">
 
-<group id="Group1" label="縁文字の作成・解除">
+<group id="Group1" label="縁文字">
 <button id="Button1-1" label="縁文字の作成" imageMso="DiagramChangeToTargetClassic" size="normal" onAction="縁文字UserFormの起動" />
 <button id="Button1-2" label="縁文字の解除" imageMso="CancelRequest" size="normal" onAction="縁文字の解除" />
 </group>
@@ -22,7 +22,29 @@
 </group>
 
 <group id="Group4" label="線の変換">
-<button id="Button4-1" label="波線に変換" imageMso="LineStylesDialog" size="normal" onAction="波線に変換" />
+<button id="Button4-1" label="波線に変換" imageMso="LineStylesDialog" size="normal" onAction="波線に変換UfMain" />
+</group>
+
+<group id="Group5" label="図形の変更・移動">
+<button id="Button5-1" label="位置合わせ" imageMso="ObjectsGroup" size="normal" onAction="位置合わせmain" />
+<button id="Button5-2" label="図形の回転・半円" imageMso="RotateMenu" size="normal" onAction="半円main" />
+</group>
+
+<group id="Group6" label="TextBoxの編集">
+<button id="Button6-1" label="折り返し削除" imageMso="Scrum" size="normal" onAction="折り返しの削除" />
+<button id="Button6-2" label="行間変更" imageMso="ParagraphSpacingAfter" size="normal" onAction="行間変更" />
+</group>
+
+<group id="Group7" label="図形のサイズ">
+<button id="Button7-1" label="縦横比固定" imageMso="RepeatingChoiceGroup" size="normal" onAction="縦横比の固定" />
+<button id="Button7-2" label="縦横比固定の解除" imageMso="RepeatingRecursiveSection" size="normal" onAction="縦横比の解除" />
+<button id="Button7-3" label="縦横比1:1に変更" imageMso="SizeToGridAccess" size="normal" onAction="縦横比を1対1に変更" />
+<button id="Button7-4" label="最大サイズ" imageMso="SelectCurrentRegion" size="normal" onAction="最大サイズで配置" />
+<button id="Button7-5" label="トリミング" imageMso="CropTool" size="normal" onAction="画像のトリミング" />
+</group>
+
+<group id="Group8" label="図形の貼付け">
+<button id="Button8-1" label="拡張メタファイル貼付け" imageMso="PasteGallery" size="normal" onAction="拡張メタファイルを貼付け" />
 </group>
 
 </tab>
